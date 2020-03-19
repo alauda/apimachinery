@@ -70,11 +70,11 @@ func newSerializersForScheme(scheme *runtime.Scheme, mf json.MetaFactory) []seri
 		},
 	}
 
-	for _, fn := range serializerExtensions {
-		if serializer, ok := fn(scheme); ok {
-			serializers = append(serializers, serializer)
-		}
-	}
+	// for _, fn := range serializerExtensions {
+	// 	if serializer, ok := fn(scheme); ok {
+	// 		serializers = append(serializers, serializer)
+	// 	}
+	// }
 	return serializers
 }
 
